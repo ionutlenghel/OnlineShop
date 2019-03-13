@@ -27,13 +27,13 @@ public class addtoCart extends driverClass {
         if (addtocartText.equals(expectedaddtocartText)) {
         	driver.findElement(By.cssSelector("div#ModalContainer a.modalClose")).click();
         } else {
-        		driver.findElement(By.className("FAIL"));
-        		}
+        	driver.findElement(By.className("FAIL"));
+        	}
         
 	}
 	
 	@Test(priority=2, dataProviderClass=dataChk.class, dataProvider="dataCheckout")
-	public void checkout   (String email,
+	public void checkout		   (String email,
 				            String bfirstname,
 				            String blastname,
 				            String bphone,
@@ -43,7 +43,7 @@ public class addtoCart extends driverClass {
 				            String bcountry,
 				            String bstate,
 				            String bzipcode
-				          	) throws InterruptedException {
+				            ) throws InterruptedException {
 		
 	driver.findElement(By.cssSelector("a[title='View Cart']")).click();
 	driver.findElement(By.cssSelector("a[title='Click here to proceed to checkout']")).click();
