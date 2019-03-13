@@ -15,7 +15,7 @@ public class addtoCart extends driverClass {
 	@Test(priority=1)
 	public void addtocart() throws InterruptedException {
 		
-		driver.get("http://twotapstore.com/slim-cotton-chinos/");
+	driver.get("http://twotapstore.com/slim-cotton-chinos/");
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         driver.findElement(By.cssSelector("li.swatchOneColour span.swatchColour_1[style*='ca45ff']")).click();
         driver.findElement(By.xpath("//span[text()='Large']")).click();
@@ -45,8 +45,8 @@ public class addtoCart extends driverClass {
 				            String bzipcode
 				          	) throws InterruptedException {
 		
-		driver.findElement(By.cssSelector("a[title='View Cart']")).click();
-		driver.findElement(By.cssSelector("a[title='Click here to proceed to checkout']")).click();
+	driver.findElement(By.cssSelector("a[title='View Cart']")).click();
+	driver.findElement(By.cssSelector("a[title='Click here to proceed to checkout']")).click();
         driver.findElement(By.cssSelector("input#CreateAccountButton")).click();
         Thread.sleep(300);
         driver.findElement(By.id("FormField_1")).sendKeys(email);
